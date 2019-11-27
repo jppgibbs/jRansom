@@ -5,14 +5,10 @@
 def caesartranslate(message, key, mode):
 
 	# every possible symbol that can be encrypted
-	LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+	LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789/+='
 
 	# stores the encrypted/decrypted form of the message
 	translated = ''
-
-
-	# capitalize the string in message
-	message = message.upper()
 
 	# run the encryption/decryption code on each symbol in the message string
 	for symbol in message:
